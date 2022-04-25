@@ -1,0 +1,107 @@
+@font-face {
+    font-family: harleyScript;
+    src: url(harley-script/harley.ttf);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+}
+
+nav {
+    background-color: #2c3840;
+}
+
+ul {
+    list-style-position: outside;
+    line-height: 1.6;
+    padding: 0;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+}
+ul:first-child {
+    float: left;
+}
+ul:last-child {
+    float: right;
+}
+
+li {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+main {
+    display: flex;
+    height: 95vh;
+}
+
+.navbar-wrapper {
+    height: 45px;
+    line-height: 45px;
+    padding-bottom: 0;
+    padding-top: 0;
+}
+.navbar-wrapper .menu a {
+    color: #f5f5f5;
+}
+
+.menu {
+    margin: 0;
+    list-style-type: none;
+}
+.menu > li {
+    display: table-cell;
+    vertical-align: middle;
+}
+.menu > li > a {
+    display: block;
+    margin-bottom: 0;
+    padding: 0.7rem 1rem;
+}
+
+.logo {
+    font-family: harleyScript; 
+    font-size: 21px;
+    opacity: 0.75;
+}
+
+.nav-link {
+    top: 50%;
+    right: 50%;
+    margin-top: -6px;
+    border-right: 1px solid #3b4951;
+}
+
+.header-left {
+    background-color: #1B1B1B;
+    flex: 1;
+}
+.header-right {
+    background-color: #2D2322;
+    flex: 1;
+}
+
+.header-image {
+    flex: 1;
+    height:auto;
+    min-width: 200px;
+    min-height: 500px;
+}
