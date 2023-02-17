@@ -4,13 +4,118 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Testing-Recipes</title>
+  <title>RSL</title>
+  <link href="https://fonts.googleapis.com/css?family=Tangerine:regular,700" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css?family=Roboto:100,100italic,300,300italic,regular,italic,500,500italic,700,700italic,900,900italic" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>Bailey's Birthday Desserts</h1>
-  <p><a href="./plans/working-flow.html">Work Flow</a> / <a href="./plans/shopping-list.html">Shopping List</a></p>
-  <ul>
-    <img src="./images/mike-monster.jpg" alt="Mike the monster" width="250">
+  <!-- --------------------------------------------NavBar-------------------------------------------- -->
+  <nav>
+    <ul class="menu">
+      <li class="logo-wrapper">
+        <button class="logo tangerine text-white" href="index.html">
+          <h3>RSL</h3>
+        </button>
+      </li>
+      <li>
+        <button href="#pastryrecipes">Pastry Recipes</button>
+      </li>
+      <li>
+        <button href="#breadrecipes">Bread Recipes</button>
+      </li>
+      </ul>
+      <ul class="menu float-right">
+      <li>
+        <button class="button-secondary" href="#subscribe">Subscribe</button>
+      </li>
+      <li>
+        <button class="button-primary" href="#orderNow">Order Now</button>
+      </li>
+    </ul>
+  </nav>
+  <!-- --------------------------------------------Header-------------------------------------------- -->
+  <main class="header-wrapper">
+    <div class="header-left text-white">
+      <h2 class="tangerine">Recipes</h2>
+      <h5>Tired of finding the “correct” recipes online? Want to be on top of the most trandy pastries and bake goods? Want to be the cool person that always provide the prettiest dessert items in family and friends gatherings? <br> Subscribe now!</h5>
+      <button class="button-secondary" href="#subscribe">Subscribe Now</button>
+    </div>
+    <div class="header-center">
+    <h1 class="text-center-overlap text-white tangerine">Rene’s <br> SweetLand</h1>
+    <img src="images/pablo-merchan-montes-SCbq6uKCyMY-unsplash.jpg" alt="ingredients image" class="header-image">
+    </div>
+    <div class="header-right text-white">
+      <h2 class="tangerine">Order Online</h2>
+      <h5>Whether you’re preparing for a potlock party, and not feeling like baking, or simply having some cravings, and need to have something sweet inside your mouth right now...
+        <br>
+        We’ve got you! You’re only one click away!</h5>
+      <button class="button-primary" href="#orderNow">Order Now</button>
+    </div>
+  </main>
+  <!-- --------------------------------------------CATEGORIES-------------------------------------------- -->
+  <section class="section-wrapper">
+    <h1 class="tangerine text-black">Recipes Categories</h1>
+    <div class="category-wrapper">
+      <button>
+        <h2>Breads</h2>
+        <img class="category-image" src="./images/bread.jpg" alt="Bread Recipes">
+      </button>
+      <button>
+        <h2>Cream Puffs</h2>
+        <img class="category-image" src="./images/cream-puff.jpg" alt="Cream Puff Recipes">
+      </button>
+    </div>
+    <div class="category-wrapper">
+      <button class="text-black">
+        <h2>Cake Rolls</h2>
+        <img class="category-image" src="./images/cake-roll.jpg" alt="Cake Roll Recipes">
+      </button>
+      <button>
+        <h2>Cupcakes</h2>
+        <img class="category-image" src="./images/cupcake.jpg" alt="Cupcake Recipes">
+      </button>
+    </div>
+  </section>
+  <!-- --------------------------------------------WHY RSL SECTION-------------------------------------------- -->
+  <section class="section-wrapper background-black">
+    <h1 class="tangerine text-white">Why RSL?</h1>
+    <h5 class="text-white">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form.There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form. There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form.</h5>
+    <div class="icons">
+      <div class="icon">
+        <img src="./images/community-icon.jpg" alt="Community Involvement">
+        <h4 class="text-white">Community Involvement</h5>
+      </div>
+      <div class="icon">
+        <img src="./images/natural-icon.jpg" alt="Natural Ingredients">
+        <h4 class="text-white">Natural Ingredients</h5>
+      </div>
+      <div class="icon">
+        <img src="./images/heart-icon.jpg" alt="Bake with Love">
+        <h4 class="text-white">Bake with Love</h5>
+      </div>
+    </div>
+  </section>
+  <!-- --------------------------------------------WHY RSL SECTION-------------------------------------------- -->
+  <footer>
+    <div class="text-black">© 2022 RSL. All rights reserved</div>
+    <div class="text-black">Follow us:
+      <button>
+        <img src="./images/TwitterLogo.jpg" alt="Twitter Icon">
+      </button>
+      <button>
+        <img src="./images/FacebookLogo.jpg" alt="Facebook Icon">
+      </button>
+      <button>
+        <img src="./images/YoutubeLogo.jpg" alt="Youtube Icon">
+      </button>
+      <button>
+        <img src="./images/InstagramLogo.jpg" alt="Instagram Icon">
+      </button>
+    </div>
+  </footer>
+    <!-- --------------------------------------------RECIPES-------------------------------------------- -->
+  <!-- <ul>
     <li><a href="./recipes/mike-cupcake-deco.html">Monster cupcakes - Mike</a></li>
       <ol>
         <li>Sesame sponge cake</li>
@@ -19,7 +124,6 @@
       </ol>
   </ul>
   <ul>
-    <img src="./images/james-monster.jpg" alt="James the monster" height="250">
     <li><a href="./recipes/james-cupcake-deco.html">Monster cupcakes - James</a></li>
       <ol>
         <li>Chocolate mochi cake</li>
@@ -28,7 +132,6 @@
       </ol>
   </ul>
   <ul>
-    <img src="./images/totoro.jpeg" alt="Totoro swiss roll" height="250">
     <li><a href="./recipes/swiss-roll-deco.html">Swiss roll - Totoro</a></li>
       <ol>
         <li>Sesame sponge cake</li>
@@ -38,12 +141,11 @@
       </ol>
   </ul>
   <ul>
-    <img src="./images/dog-emoji.jpeg" alt="Dog emoji" height="250">
     <li><a href="./recipes/hot-dog-bun-deco.html">Dog shaped hotdog buns</a></li>
       <ol>
         <li>Sweet dough bread</li>
         <li>Decorations</li>
       </ol>
-  </ul>
+  </ul> -->
 </body>
 </html>
